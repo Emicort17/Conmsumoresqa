@@ -1,6 +1,6 @@
 #navbar {
     width: 100%;
-    background: linear-gradient(270deg, #6699ff, #ff6666);
+    background: linear-gradient(270deg, #f10088, #00ff9d);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
     position: fixed;
