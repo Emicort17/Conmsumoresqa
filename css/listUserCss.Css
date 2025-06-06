@@ -1,0 +1,91 @@
+#navbar {
+  width: 100%;
+  background: linear-gradient(270deg, #6699ff, #ff6666); /* azul suave a rojo suave */
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+#navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: opacity 0.3s;
+}
+
+#navbar li a:hover {
+  opacity: 0.7;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+}
+
+.user-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+.user-table th,
+.user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-table tbody tr:last-child td {
+    border-bottom: none;
+}
